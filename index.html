@@ -8,10 +8,11 @@
 function toggleImage() {
    var img1 = "https://i.kym-cdn.com/photos/images/original/000/594/889/c89.gif";
    var img2 = "https://i.pinimg.com/564x/cf/e7/ca/cfe7caebf5b4e8915570a415b3eb0e95.jpg";
-   
+   var img3 = "https://image.makewebeasy.net/makeweb/0/7LODqEDPj/SASLeaflet/SAS_Kakyoin.jpg";
+    
    var imgElement = document.getElementById('toggleImage');
 
-   imgElement.src = (imgElement.src === img1)? img2 : img1;
+   imgElement.src = (imgElement.src === img1)? img2 : img1 : img3;
 }
 </script>
 <img src="https://i.kym-cdn.com/photos/images/original/000/594/889/c89.gif" class="center" id="toggleImage" onclick="toggleImage();"/>
