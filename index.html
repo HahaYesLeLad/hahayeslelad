@@ -1,6 +1,73 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+  opacity: 1;
+  transition: opacity 0.6s;
+  margin-bottom: 15px;
+}
+
+.alert.success {background-color: #4CAF50;}
+.alert.info {background-color: #2196F3;}
+.alert.warning {background-color: #ff9800;}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+</style>
+</head>
+<body>
+
+<h2>Welcome to hell...</h2>
+<p></p>
+<div class="alert">
+  <span class="closebtn">&times;</span>  
+  <strong>Danger!</strong> Kakyoin is here
+</div>
+
+<div class="alert success">
+  <span class="closebtn">&times;</span>  
+  <strong>DANGER!!!</strong> KAKYOIN
+</div>
+
+<div class="alert info">
+  <span class="closebtn">&times;</span>  
+  <strong>DANGER!!!!!!!1</strong> KAKYOIN
+</div>
+
+<div class="alert warning">
+  <span class="closebtn">&times;</span>  
+  <strong>Warning!</strong> this is a warning warning you about a warning haha nerd get warned
+</div>
+
+<script>
+var close = document.getElementsByClassName("closebtn");
+var i;
+
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function(){
+    var div = this.parentElement;
+    div.style.opacity = "0";
+    setTimeout(function(){ div.style.display = "none"; }, 600);
+  }
+}
+</script>
     <title>KAKYOINNNNNNNNNNNN</title>
 </head>
 <body>
@@ -8,7 +75,7 @@
 function toggleImage() {
    var img1 = "https://i.kym-cdn.com/photos/images/original/000/594/889/c89.gif";
    var img2 = "https://i.pinimg.com/564x/cf/e7/ca/cfe7caebf5b4e8915570a415b3eb0e95.jpg";
-   var img3 = "https://image.makewebeasy.net/makeweb/0/7LODqEDPj/SASLeaflet/SAS_Kakyoin.jpg";
+   var img3 = "https://image.makewebeasy.net/makeweb/0/7LODqEDPjac/SASLeaflet/SAS_Kakyoin.jpg";
     
    var imgElement = document.getElementById('toggleImage');
 
